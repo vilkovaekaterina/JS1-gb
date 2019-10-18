@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<h1>"Homework for lesson 1"</h1>
+<span>Асинхронные скрипты: defer/async</span>
+<p>
+    <h3>Атрибут async</h3>
+    <p>
+        Поддерживается всеми браузерами, кроме IE9-. Скрипт выполняется полностью асинхронно.
+        То есть, при обнаружении ASYNC браузер не останавливает обработку страницы, а спокойно работает дальше.
+        Когда скрипт будет загружен – он выполнится.
+    </p>
+
+    <h3>Атрибут defer</h3>
+    <p>
+        Поддерживается всеми браузерами, включая самые старые IE.
+        Скрипт также выполняется асинхронно, не заставляет ждать страницу, но есть два отличия от async. <wbr>
+        <ol>
+            <li>Браузер гарантирует, что относительный порядок скриптов с defer будет сохранён.</li>
+            <li>Скрипт с defer сработает, когда весь HTML-документ будет обработан браузером.</li>
+        </ol>
+    </p>
+
+</p>
+<script src="lesson1.js" ></script>
+</body>
+</html>
